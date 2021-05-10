@@ -1,15 +1,15 @@
 import React from 'react';
-import logo from './assets/logo.svg';
+import TodoContext from '../context/TodoContext';
 import Navbar from './Navbar';
 import ToDoList from './ToDoList';
  
-const App = () => {
-    return (
-      <div className="uk-container">
-        <Navbar></Navbar>
-        <ToDoList></ToDoList>
-      </div>
-    );
-  }
+const App = () => (
+  <TodoContext>
+    <div className="uk-container">
+      <Navbar></Navbar>
+      <ToDoList></ToDoList>
+    </div>
+  </TodoContext>
+)
         
 export default App;
