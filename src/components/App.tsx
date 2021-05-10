@@ -1,13 +1,17 @@
 import React from 'react';
 import logo from './assets/logo.svg';
-
-
-function App() {
-  return (
-    <div className="App">
-      <h1>meu primeiro app!</h1>
-    </div>
-  );
-}
+import Navbar from './Navbar';
+import ToDoList from './ToDoList';
+ 
+const App = () => {
+    return (
+      <div className="uk-container">
+        <Navbar></Navbar>
+        <ToDoList></ToDoList>
+      </div>
+    );
+  
+  }
+        
 
 export default App;
